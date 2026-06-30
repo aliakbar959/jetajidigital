@@ -60,11 +60,9 @@ nav {
 nav.scrolled { border-bottom-color: var(--border); }
 
 /* Logo */
-.logo {
-height: 60px;
+.logo{
+  height: 60px;
 }
-
-
 
 /* ── Desktop & Tablet: centred nav links ── */
 .nav-links {
@@ -192,8 +190,7 @@ height: 60px;
 /* ═══════════════════════════════════════════════════════
    PAGES
 ═══════════════════════════════════════════════════════ */
-.page { display: none; padding-top: var(--nav-h); min-height: 100vh; }
-.page.active { display: block; }
+main { display: block; padding-top: var(--nav-h); min-height: 100vh; }
 
 /* ═══════════════════════════════════════════════════════
    HERO
@@ -356,10 +353,13 @@ section { padding: 88px 60px; }
   grid-template-columns: repeat(3, 1fr);
 }
 .service-preview-item {
+  display: block;
   padding: 56px 44px;
   border-right: 1px solid var(--border);
   transition: background 0.3s;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 .service-preview-item:last-child { border-right: none; }
 .service-preview-item:hover { background: rgba(201, 168, 76, 0.04); }
@@ -919,7 +919,6 @@ footer {
    RESPONSIVE — TINY  ≤ 360px
 ═══════════════════════════════════════════════════════ */
 @media (max-width: 360px) {
-  .logo { font-size: 17px; letter-spacing: 0.08em; }
   .mobile-cta { display: none; }
   nav { padding: 0 16px; }
   section, .why-section, .approach-section { padding: 40px 16px; }
