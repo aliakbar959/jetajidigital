@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ═══ SEO META ═══ -->
+  <title>Contact Us | Jetaji Digital — Get a Free Quote</title>
+  <meta name="description" content="Get in touch with Jetaji Digital for website development, digital marketing, or AI automation. Reach us on WhatsApp at +91 8306455053 or via our contact form — we respond within 24 hours."/>
+  <meta name="keywords" content="contact Jetaji Digital, hire digital agency, free quote website development, WhatsApp business contact"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://jetajidigital.com/contact.html"/>
+
+  <!-- ═══ OPEN GRAPH / SOCIAL SHARING ═══ -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Contact Us | Jetaji Digital"/>
+  <meta property="og:description" content="Tell us what you're working on. We respond within one business day with honest thoughts and a clear path forward."/>
+  <meta property="og:url" content="https://jetajidigital.com/contact.html"/>
+  <meta property="og:site_name" content="Jetaji Digital"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Contact Us | Jetaji Digital"/>
+  <meta name="twitter:description" content="Tell us what you're working on. We respond within one business day with honest thoughts and a clear path forward."/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="shortcut icon" href="Assets/JD-favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- ═══ STRUCTURED DATA (Schema.org) ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "url": "https://jetajidigital.com/contact.html",
+    "mainEntity": {
+      "@type": "ProfessionalService",
+      "name": "Jetaji Digital",
+      "email": "aliakbarjetaji214@gmail.com",
+      "telephone": "+918306455053",
+      "areaServed": "Worldwide"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<nav id="main-nav">
+   <img src="Assets/JD.jpeg" alt="logo" class="logo">
+
+  <!-- Desktop & Tablet: centred nav links -->
+  <ul class="nav-links" id="desktop-links">
+    <li><a href="index.html" >Home</a></li>
+    <li><a href="services.html" >Services</a></li>
+    <li><a href="about.html" >About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+
+  <!-- Desktop & Tablet: right CTA -->
+  <a href="contact.html" class="nav-cta desktop-cta">Start a Project</a>
+
+  <!-- Mobile only: compact CTA + hamburger (shown via CSS media query) -->
+  <a href="contact.html" class="nav-cta mobile-cta">Start a Project</a>
+  <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Mobile slide-down drawer (hidden on desktop/tablet via CSS) -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <ul>
+    <li><a href="index.html" >Home</a></li>
+    <li><a href="services.html" >Services</a></li>
+    <li><a href="about.html" >About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT PAGE
+════════════════════════════════════════════════ -->
+<main>
+
+  <div class="contact-split">
+
+    <!-- Left info panel -->
+    <div class="contact-left">
+      <div>
+        <p class="section-label reveal">Get in Touch</p>
+        <h1 class="section-title reveal">Let's build<br>something <em>great.</em></h1>
+        <div class="divider reveal"></div>
+        <p class="reveal contact-intro">Tell us what you're working on. We'll respond on WhatsApp within one business day with honest thoughts and a clear path forward.</p>
+      </div>
+      <div class="contact-info reveal">
+        <div class="contact-info-item">
+          <div class="contact-info-label">WhatsApp</div>
+          <div class="contact-info-value"><a href="https://wa.me/918306455053" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">+91 83064 55053</a></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-label">Email</div>
+          <div class="contact-info-value"><a href="mailto:aliakbarjetaji214@gmail.com" style="color:inherit;text-decoration:none;">aliakbarjetaji214@gmail.com</a></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-label">Location</div>
+          <div class="contact-info-value">Available Worldwide — Remote-first</div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-label">Response Time</div>
+          <div class="contact-info-value">Within 24 hours</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right form panel -->
+    <div class="contact-right">
+
+      <!-- Form -->
+      <div id="form-container" class="reveal">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="f-first">First Name</label>
+            <input class="form-input" type="text" id="f-first" placeholder="Your first name" autocomplete="given-name"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-last">Last Name</label>
+            <input class="form-input" type="text" id="f-last" placeholder="Your last name" autocomplete="family-name"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-email">Email Address</label>
+          <input class="form-input" type="email" id="f-email" placeholder="your@email.com" autocomplete="email"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-phone">Phone Number</label>
+          <input class="form-input" type="tel" id="f-phone" placeholder="+91 XXXXX XXXXX" autocomplete="tel"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-service">Service Interest</label>
+          <select class="form-select" id="f-service">
+            <option value="" disabled selected>Select a service</option>
+            <option>Website Development</option>
+            <option>Digital Marketing</option>
+            <option>AI Automation</option>
+            <option>Multiple Services</option>
+            <option>Not Sure Yet</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-budget">Budget Range</label>
+          <select class="form-select" id="f-budget">
+            <option value="" disabled selected>Select your budget</option>
+            <option>Under ₹50,000</option>
+            <option>₹50,000 – ₹1,50,000</option>
+            <option>₹1,50,000 – ₹5,00,000</option>
+            <option>₹5,00,000+</option>
+            <option>Let's discuss</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-message">Tell Us About Your Project</label>
+          <textarea class="form-textarea" id="f-message" placeholder="What are you building? What problem needs solving?"></textarea>
+        </div>
+        <!-- Button sends form data to WhatsApp -->
+        <button class="form-submit" onclick="handleSubmit()">Send a Message</button>
+      </div>
+
+      <!-- Success state -->
+      <div id="form-success" class="form-success-panel" style="display:none;">
+        <div class="success-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12 L10 17 L19 8" stroke="#C9A84C" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3 class="success-title">Opening WhatsApp…</h3>
+        <p class="success-body">Your message is ready. WhatsApp will open so you can send it directly to our team. We'll get back to you within 24 hours.</p>
+        <a class="btn-ghost" href="index.html">Back to Home</a>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+         <img src="Assets/JD.jpeg" alt="logo" class="logo">
+        <p class="footer-tagline">Premium digital services — websites, marketing & AI automation.</p>
+      </div>
+      <div class="footer-nav">
+        <p class="footer-col-label">Pages</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-col-label">Get in Touch</p>
+        <ul class="footer-contact-list">
+          <li>
+            <a href="https://wa.me/918306455053" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              +91 8306455053
+            </a>
+          </li>
+          <li>
+            <a href="mailto:aliakbarjetaji214@gmail.com" class="footer-contact-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              aliakbarjetaji214@gmail.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Jetaji Digital. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
