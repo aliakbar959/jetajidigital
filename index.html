@@ -3,36 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jetaji Digital — Premium Digital Agency</title>
-  <link rel="shortcut icon" href="JD-favicon.png" type="image/x-icon">
+
+  <!-- ═══ SEO META ═══ -->
+  <title>Jetaji Digital | Website Development, Digital Marketing &amp; AI Automation Agency</title>
+  <meta name="description" content="Jetaji Digital is a premium agency offering website development, digital marketing, and AI automation services. We build fast, conversion-focused digital experiences for growing businesses."/>
+  <meta name="keywords" content="website development, digital marketing agency, AI automation, web design, SEO services, Jetaji Digital"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://jetajidigital.com/index.html"/>
+
+  <!-- ═══ OPEN GRAPH / SOCIAL SHARING ═══ -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Jetaji Digital | Premium Digital Agency"/>
+  <meta property="og:description" content="Website development, digital marketing, and AI automation — crafted with precision for businesses ready to grow."/>
+  <meta property="og:url" content="https://jetajidigital.com/index.html"/>
+  <meta property="og:site_name" content="Jetaji Digital"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Jetaji Digital | Premium Digital Agency"/>
+  <meta name="twitter:description" content="Website development, digital marketing, and AI automation — crafted with precision for businesses ready to grow."/>
+
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="shortcut icon" href="JD-favicon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
+
+  <!-- ═══ STRUCTURED DATA (Schema.org) ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Jetaji Digital",
+    "description": "Premium agency offering website development, digital marketing, and AI automation services.",
+    "url": "https://jetajidigital.com/",
+    "email": "aliakbarjetaji214@gmail.com",
+    "telephone": "+918306455053",
+    "areaServed": "Worldwide",
+    "priceRange": "₹₹",
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════
-     NAVIGATION
-     Desktop/Tablet : Logo (left) | Links (centre) | CTA (right)
-     Mobile only    : Logo (left) | CTA (centre-right) | Hamburger (right)
-════════════════════════════════════════════════ -->
 <nav id="main-nav">
-   <img src="JD-favicon.png" alt="logo" class="logo">
+<img src="JD.jpeg" alt="" class="logo">
 
   <!-- Desktop & Tablet: centred nav links -->
   <ul class="nav-links" id="desktop-links">
-    <li><a class="active" onclick="showPage('home')">Home</a></li>
-    <li><a onclick="showPage('services')">Services</a></li>
-    <li><a onclick="showPage('about')">About</a></li>
-    <li><a onclick="showPage('contact')">Contact</a></li>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="services.html" >Services</a></li>
+    <li><a href="about.html" >About</a></li>
+    <li><a href="contact.html" >Contact</a></li>
   </ul>
 
   <!-- Desktop & Tablet: right CTA -->
-  <a class="nav-cta desktop-cta" onclick="showPage('contact')">Start a Project</a>
+  <a href="contact.html" class="nav-cta desktop-cta">Start a Project</a>
 
   <!-- Mobile only: compact CTA + hamburger (shown via CSS media query) -->
-  <a class="nav-cta mobile-cta" onclick="showPage('contact')">Start a Project</a>
+  <a href="contact.html" class="nav-cta mobile-cta">Start a Project</a>
   <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
     <span></span>
     <span></span>
@@ -43,18 +71,17 @@
 <!-- Mobile slide-down drawer (hidden on desktop/tablet via CSS) -->
 <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <ul>
-    <li><a class="active" onclick="navTo('home')">Home</a></li>
-    <li><a onclick="navTo('services')">Services</a></li>
-    <li><a onclick="navTo('about')">About</a></li>
-    <li><a onclick="navTo('contact')">Contact</a></li>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="services.html" >Services</a></li>
+    <li><a href="about.html" >About</a></li>
+    <li><a href="contact.html" >Contact</a></li>
   </ul>
 </div>
-
 
 <!-- ═══════════════════════════════════════════
      HOME PAGE
 ════════════════════════════════════════════════ -->
-<div class="page active" id="page-home">
+<main>
 
   <!-- Hero -->
   <div class="hero">
@@ -64,33 +91,32 @@
     <div class="signature-line"></div>
     <p class="hero-body">Websites that command attention. Marketing that converts. AI systems that scale your business — all under one roof, crafted with precision.</p>
     <div class="hero-actions">
-      <a class="btn-primary" onclick="showPage('services')">Explore Services</a>
-      <a class="btn-ghost" onclick="showPage('contact')">Let's Talk</a>
+      <a class="btn-primary" href="services.html">Explore Services</a>
+      <a class="btn-ghost" href="contact.html">Let's Talk</a>
     </div>
-
   </div>
 
   <!-- Services Preview Strip -->
-  <section class="services-preview">
+  <section class="services-preview" aria-label="Our services overview">
     <div class="services-preview-inner">
-      <div class="service-preview-item" onclick="showPage('services')">
+      <a class="service-preview-item" href="services.html">
         <div class="service-num">01</div>
-        <h3>Website Development</h3>
+        <h2>Website Development</h2>
         <p>Bespoke digital experiences engineered for performance, conversion, and lasting impression.</p>
         <div class="service-arrow">Explore →</div>
-      </div>
-      <div class="service-preview-item" onclick="showPage('services')">
+      </a>
+      <a class="service-preview-item" href="services.html">
         <div class="service-num">02</div>
-        <h3>Digital Marketing</h3>
+        <h2>Digital Marketing</h2>
         <p>Data-driven campaigns that place your brand precisely where your audience already is.</p>
         <div class="service-arrow">Explore →</div>
-      </div>
-      <div class="service-preview-item" onclick="showPage('services')">
+      </a>
+      <a class="service-preview-item" href="services.html">
         <div class="service-num">03</div>
-        <h3>AI Automation</h3>
+        <h2>AI Automation</h2>
         <p>Intelligent systems that eliminate repetition, reduce costs, and unlock scale.</p>
         <div class="service-arrow">Explore →</div>
-      </div>
+      </a>
     </div>
   </section>
 
@@ -140,23 +166,25 @@
     <p class="section-label reveal">Ready to begin?</p>
     <h2 class="section-title reveal">Let's build something <em>exceptional.</em></h2>
     <div class="reveal">
-      <a class="btn-primary" onclick="showPage('contact')">Start a Conversation</a>
+      <a class="btn-primary" href="contact.html">Start a Conversation</a>
     </div>
   </section>
+
+</main>
 
   <footer>
     <div class="footer-top">
       <div class="footer-brand">
-         <img src="JD.jpeg" alt="logo" class="logo">
+        <img src="JD.jpeg" alt="" class="logo">
         <p class="footer-tagline">Premium digital services — websites, marketing & AI automation.</p>
       </div>
       <div class="footer-nav">
         <p class="footer-col-label">Pages</p>
         <ul class="footer-links">
-          <li><a onclick="showPage('home')">Home</a></li>
-          <li><a onclick="showPage('services')">Services</a></li>
-          <li><a onclick="showPage('about')">About</a></li>
-          <li><a onclick="showPage('contact')">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-contact">
@@ -181,410 +209,6 @@
       <p class="footer-copy">© 2026 Jetaji Digital. All rights reserved.</p>
     </div>
   </footer>
-</div>
-
-
-<!-- ═══════════════════════════════════════════
-     SERVICES PAGE
-════════════════════════════════════════════════ -->
-<div class="page" id="page-services">
-
-  <div class="services-hero">
-    <p class="section-label reveal">What We Do</p>
-    <h1 class="section-title reveal">Three disciplines.<br><em>One vision.</em></h1>
-    <div class="divider reveal"></div>
-    <p class="reveal services-intro">We work at the intersection of design, technology, and intelligence — helping businesses command their markets online.</p>
-  </div>
-
-  <!-- 01: Website Development -->
-  <div class="service-full">
-    <div class="service-content reveal">
-      <div class="service-num">01</div>
-      <h2 class="section-title">Website<br><em>Development</em></h2>
-      <div class="divider"></div>
-      <p class="service-desc">Your website is your most valuable business asset. We design and engineer digital experiences that are fast, conversion-optimised, and distinctly yours.</p>
-      <div class="service-tags">
-        <span class="service-tag">Custom Design</span>
-        <span class="service-tag">E-Commerce</span>
-        <span class="service-tag">Web Apps</span>
-        <span class="service-tag">CMS Integration</span>
-      </div>
-      <a class="btn-primary" onclick="showPage('contact')">Discuss Your Project</a>
-    </div>
-    <div class="service-visual reveal">
-      <div class="service-visual-inner">
-        <p class="service-num">What's included</p>
-        <ul class="feature-list">
-          <li>Custom UI/UX design and prototyping</li>
-          <li>Performance-first development (Core Web Vitals)</li>
-          <li>Mobile-responsive across all breakpoints</li>
-          <li>SEO-ready structure and meta architecture</li>
-          <li>CMS setup (Webflow, WordPress, Sanity)</li>
-          <li>E-commerce integration and payment flows</li>
-          <li>Post-launch support and maintenance</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- 02: Digital Marketing -->
-  <div class="service-full reverse">
-    <div class="service-content reveal">
-      <div class="service-num">02</div>
-      <h2 class="section-title">Digital<br><em>Marketing</em></h2>
-      <div class="divider"></div>
-      <p class="service-desc">Traffic without strategy is noise. We build and execute marketing systems that attract the right people at the right moment — and convert them into loyal customers.</p>
-      <div class="service-tags">
-        <span class="service-tag">SEO / SEM</span>
-        <span class="service-tag">Paid Ads</span>
-        <span class="service-tag">Social Media</span>
-        <span class="service-tag">Email Campaigns</span>
-      </div>
-      <a class="btn-primary" onclick="showPage('contact')">Grow Your Reach</a>
-    </div>
-    <div class="service-visual reveal">
-      <div class="service-visual-inner">
-        <p class="service-num">What's included</p>
-        <ul class="feature-list">
-          <li>Search engine optimisation (on-page & technical)</li>
-          <li>Google & Meta paid advertising management</li>
-          <li>Social media strategy and content calendars</li>
-          <li>Email marketing and automation sequences</li>
-          <li>Conversion rate optimisation (CRO)</li>
-          <li>Analytics setup, tracking, and monthly reporting</li>
-          <li>Brand content and copywriting</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- 03: AI Automation -->
-  <div class="service-full">
-    <div class="service-content reveal">
-      <div class="service-num">03</div>
-      <h2 class="section-title">AI<br><em>Automation</em></h2>
-      <div class="divider"></div>
-      <p class="service-desc">The most successful businesses in the next decade will leverage AI the smartest. We identify, design, and deploy intelligent automation that saves time and unlocks scale.</p>
-      <div class="service-tags">
-        <span class="service-tag">AI Chatbots</span>
-        <span class="service-tag">Workflow Automation</span>
-        <span class="service-tag">Lead Systems</span>
-        <span class="service-tag">Data Pipelines</span>
-      </div>
-      <a class="btn-primary" onclick="showPage('contact')">Automate Your Business</a>
-    </div>
-    <div class="service-visual reveal">
-      <div class="service-visual-inner">
-        <p class="service-num">What's included</p>
-        <ul class="feature-list">
-          <li>Business process audit and automation mapping</li>
-          <li>AI chatbot development and deployment</li>
-          <li>CRM and sales pipeline automation</li>
-          <li>Custom workflow builds (Make, Zapier, n8n)</li>
-          <li>AI-powered content and lead generation</li>
-          <li>Document and data processing automation</li>
-          <li>Ongoing monitoring and optimisation</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <section class="cta-band">
-    <h2 class="section-title reveal">Not sure where to start?<br><em>Let's figure it out together.</em></h2>
-    <div class="reveal">
-      <a class="btn-ghost" onclick="showPage('contact')">Book a Free Discovery Call</a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer-top">
-      <div class="footer-brand">
-         <img src="JD.jpeg" alt="logo" class="logo">
-        <p class="footer-tagline">Premium digital services — websites, marketing & AI automation.</p>
-      </div>
-      <div class="footer-nav">
-        <p class="footer-col-label">Pages</p>
-        <ul class="footer-links">
-          <li><a onclick="showPage('home')">Home</a></li>
-          <li><a onclick="showPage('services')">Services</a></li>
-          <li><a onclick="showPage('about')">About</a></li>
-          <li><a onclick="showPage('contact')">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <p class="footer-col-label">Get in Touch</p>
-        <ul class="footer-contact-list">
-          <li>
-            <a href="https://wa.me/918306455053" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              +91 8306455053
-            </a>
-          </li>
-          <li>
-            <a href="mailto:aliakbarjetaji214@gmail.com" class="footer-contact-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              aliakbarjetaji214@gmail.com
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2026 Jetaji Digital. All rights reserved.</p>
-    </div>
-  </footer>
-</div>
-
-
-<!-- ═══════════════════════════════════════════
-     ABOUT PAGE
-════════════════════════════════════════════════ -->
-<div class="page" id="page-about">
-
-  <div class="about-hero">
-    <p class="section-label reveal">About Jetaji Digital</p>
-    <h1 class="section-title reveal">We believe in the power of<br><em>deliberate craft.</em></h1>
-  </div>
-
-  <div class="about-split">
-    <div class="about-left reveal">
-      <div class="big-quote">"The internet rewards those who show up with intention."</div>
-      <p class="quote-attr">— The Jetaji Principle</p>
-    </div>
-    <div class="about-right reveal">
-      <p>Jetaji Digital was founded on a simple belief: that most businesses deserve far more from their digital presence than they're getting. We saw too many companies paying for websites no one visits, ads that burn budget, and software that doesn't fit how they actually work.</p>
-      <p>So we built something different — a boutique agency where strategy, design, and technology are never siloed. Every client we take on gets a team that understands the full picture, and builds with the full picture in mind.</p>
-      <p>We're selective about who we work with. Not because we're exclusive for its own sake, but because great work requires genuine investment from both sides. We go deep, not wide.</p>
-      <a class="btn-ghost" onclick="showPage('contact')">Work With Us</a>
-    </div>
-  </div>
-
-  <section class="values-section">
-    <div class="values-grid">
-      <div class="value-card reveal">
-        <h3>Clarity</h3>
-        <p>We remove noise. Every element on every page — yours and ours — exists because it earns its place. Clutter is the enemy of conversion.</p>
-      </div>
-      <div class="value-card reveal">
-        <h3>Craft</h3>
-        <p>Details matter. Pixel-level precision in design. Clean, maintainable code. Copy that doesn't waste a single word. We care about the things most people skim past.</p>
-      </div>
-      <div class="value-card reveal">
-        <h3>Commitment</h3>
-        <p>We treat your goals as our own. Your growth metrics are ours. Your deadlines are ours. We're not a vendor — we're a partner.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="approach-section">
-    <p class="section-label reveal">Our Approach</p>
-    <h2 class="section-title reveal">How we work</h2>
-    <div class="divider reveal"></div>
-    <div class="approach-grid reveal">
-      <div>
-        <div class="approach-item">
-          <p class="approach-label">Discovery</p>
-          <p class="approach-text">We start with deep listening. What do you do, who for, what do you want more of, what's getting in the way. We don't pitch before we understand.</p>
-        </div>
-        <div class="approach-item">
-          <p class="approach-label">Strategy</p>
-          <p class="approach-text">Before touching a tool or template, we map the plan. What are we building, why, and how does it connect to your revenue goals.</p>
-        </div>
-      </div>
-      <div>
-        <div class="approach-item">
-          <p class="approach-label">Execution</p>
-          <p class="approach-text">Design, build, test, launch — with you in the loop at every milestone. No surprises, no scope creep, no missed deadlines.</p>
-        </div>
-        <div class="approach-item">
-          <p class="approach-label">Growth</p>
-          <p class="approach-text">Launch is not the finish line. We measure, optimise, and evolve — turning what we built into a compounding asset for your business.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer-top">
-      <div class="footer-brand">
-        <img src="JD.jpeg" alt="logo" class="logo">
-        <p class="footer-tagline">Premium digital services — websites, marketing & AI automation.</p>
-      </div>
-      <div class="footer-nav">
-        <p class="footer-col-label">Pages</p>
-        <ul class="footer-links">
-          <li><a onclick="showPage('home')">Home</a></li>
-          <li><a onclick="showPage('services')">Services</a></li>
-          <li><a onclick="showPage('about')">About</a></li>
-          <li><a onclick="showPage('contact')">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <p class="footer-col-label">Get in Touch</p>
-        <ul class="footer-contact-list">
-          <li>
-            <a href="https://wa.me/918306455053" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              +91 8306455053
-            </a>
-          </li>
-          <li>
-            <a href="mailto:aliakbarjetaji214@gmail.com" class="footer-contact-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              aliakbarjetaji214@gmail.com
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2026 Jetaji Digital. All rights reserved.</p>
-    </div>
-  </footer>
-</div>
-
-
-<!-- ═══════════════════════════════════════════
-     CONTACT PAGE
-════════════════════════════════════════════════ -->
-<div class="page" id="page-contact">
-
-  <div class="contact-split">
-
-    <!-- Left info panel -->
-    <div class="contact-left">
-      <div>
-        <p class="section-label reveal">Get in Touch</p>
-        <h1 class="section-title reveal">Let's build<br>something <em>great.</em></h1>
-        <div class="divider reveal"></div>
-        <p class="reveal contact-intro">Tell us what you're working on. We'll respond on WhatsApp within one business day with honest thoughts and a clear path forward.</p>
-      </div>
-      <div class="contact-info reveal">
-        <div class="contact-info-item">
-          <div class="contact-info-label">WhatsApp</div>
-          <div class="contact-info-value">+91 83064 55053</div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-label">Email</div>
-          <div class="contact-info-value">jetajidigital@gmail.com</div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-label">Location</div>
-          <div class="contact-info-value">Available Worldwide — Remote-first</div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-label">Response Time</div>
-          <div class="contact-info-value">Within 24 hours</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Right form panel -->
-    <div class="contact-right">
-
-      <!-- Form -->
-      <div id="form-container" class="reveal">
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="f-first">First Name</label>
-            <input class="form-input" type="text" id="f-first" placeholder="Your first name" autocomplete="given-name"/>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="f-last">Last Name</label>
-            <input class="form-input" type="text" id="f-last" placeholder="Your last name" autocomplete="family-name"/>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="f-email">Email Address</label>
-          <input class="form-input" type="email" id="f-email" placeholder="your@email.com" autocomplete="email"/>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="f-phone">Phone Number</label>
-          <input class="form-input" type="tel" id="f-phone" placeholder="+91 XXXXX XXXXX" autocomplete="tel"/>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="f-service">Service Interest</label>
-          <select class="form-select" id="f-service">
-            <option value="" disabled selected>Select a service</option>
-            <option>Website Development</option>
-            <option>Digital Marketing</option>
-            <option>AI Automation</option>
-            <option>Multiple Services</option>
-            <option>Not Sure Yet</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="f-budget">Budget Range</label>
-          <select class="form-select" id="f-budget">
-            <option value="" disabled selected>Select your budget</option>
-            <option>Under ₹50,000</option>
-            <option>₹50,000 – ₹1,50,000</option>
-            <option>₹1,50,000 – ₹5,00,000</option>
-            <option>₹5,00,000+</option>
-            <option>Let's discuss</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="f-message">Tell Us About Your Project</label>
-          <textarea class="form-textarea" id="f-message" placeholder="What are you building? What problem needs solving?"></textarea>
-        </div>
-        <!-- Button sends form data to WhatsApp -->
-        <button class="form-submit" onclick="handleSubmit()">Send a Message</button>
-      </div>
-
-      <!-- Success state -->
-      <div id="form-success" class="form-success-panel" style="display:none;">
-        <div class="success-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M5 12 L10 17 L19 8" stroke="#C9A84C" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <h3 class="success-title">Opening WhatsApp…</h3>
-        <p class="success-body">Your message is ready. WhatsApp will open so you can send it directly to our team. We'll get back to you within 24 hours.</p>
-        <a class="btn-ghost" onclick="showPage('home')">Back to Home</a>
-      </div>
-
-    </div>
-  </div>
-
-  <footer>
-    <div class="footer-top">
-      <div class="footer-brand">
-        <img src="JD.jpeg" alt="logo" class="logo">
-        <p class="footer-tagline">Premium digital services — websites, marketing & AI automation.</p>
-      </div>
-      <div class="footer-nav">
-        <p class="footer-col-label">Pages</p>
-        <ul class="footer-links">
-          <li><a onclick="showPage('home')">Home</a></li>
-          <li><a onclick="showPage('services')">Services</a></li>
-          <li><a onclick="showPage('about')">About</a></li>
-          <li><a onclick="showPage('contact')">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <p class="footer-col-label">Get in Touch</p>
-        <ul class="footer-contact-list">
-          <li>
-            <a href="https://wa.me/918306455053" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              +91 8306455053
-            </a>
-          </li>
-          <li>
-            <a href="mailto:aliakbarjetaji214@gmail.com" class="footer-contact-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              aliakbarjetaji214@gmail.com
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2026 Jetaji Digital. All rights reserved.</p>
-    </div>
-  </footer>
-</div>
 
 <script src="script.js"></script>
 </body>
